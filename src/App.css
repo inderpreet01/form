@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 4px;
+  color: #333;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h6 {
+  color: #93948e;
+  margin-top: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span {
+  color: #72ab76;
+}
+input {
+  border-radius: 5px;
+  border: #93948e;
+  background-color: #ffffff;
+  width: 21rem;
+  padding: 0.5rem;
+}
+input:focus {
+  outline: 2px solid #72ab76;
+}
+select{
+  border-radius: 5px;
+  border: #93948e;
+  background-color: #ffffff;
+  width: 21rem;
+  padding: 0.5rem;
+}
+select:focus{
+  outline: 2px solid #72ab76;
+}
+.name {
+  padding: 0.8rem;
+  width: 6.5rem;
+}
+.date{
+  text-transform: uppercase;
+}
+.address{
+  width: 10.2rem;
+}
+#register {
+  width: 100%;
+}
+#register-form-main {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: #f9faf5;
+}
+ /* div{ 
+  border: 1px solid red !important;
+}  */
+.register-image-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+.register-image {
+  width: 50%;
+  height: 100vh;
+  padding: 1rem;
+  flex-grow: 1;
+}
+.register-image img {
+  width: 100%;
+  overflow: hidden;
+}
+#register-main {
+  width: 50%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-grow: 1;
+}
+#register-form {
+  text-align: left;
+  padding: 1rem;
+   border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+ background: #f9faf5;
+  margin: 0 auto;
+}
+
+button {
+  background: #72ab76;
   color: white;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 10px;
+  height: 2.5rem;
+  width: 19rem;
+  border: none;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+::placeholder {
+  color: #acada8;
+} 
